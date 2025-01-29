@@ -19,7 +19,7 @@ console.log(textIn);
 
 //to write to a certain file
 const textOut = fs.writeFileSync('./txt/output.txt', `This is what we know about it so far: ${textIn}\nCreated on: ${Date.now()}`);
-// if we use it again with the same file path it will simply override the previous text or anything inside that file in it.
+// if we use it again with the same file path it will simply override the previous text or anything inside that file in it.(***to avoid this you can simple use the appendFile instead of the writeFile)
 console.log('Written to the file in txt');
 */
 
